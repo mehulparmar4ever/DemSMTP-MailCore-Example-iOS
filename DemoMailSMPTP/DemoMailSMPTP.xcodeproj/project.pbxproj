@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		145C49BB7CDF96EA2E6F5678 /* Pods_DemoMailSMPTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40862072D20B57B165D36E37 /* Pods_DemoMailSMPTP.framework */; };
+		2AB3B83F2411378100C1746E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB3B83E2411378000C1746E /* AppDelegate.swift */; };
+		2AB3B8412411378100C1746E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB3B8402411378100C1746E /* SceneDelegate.swift */; };
+		2AB3B8432411378100C1746E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB3B8422411378100C1746E /* ViewController.swift */; };
+		2AB3B8462411378100C1746E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB3B8442411378100C1746E /* Main.storyboard */; };
+		2AB3B8482411378300C1746E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB3B8472411378300C1746E /* Assets.xcassets */; };
+		2AB3B84B2411378300C1746E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB3B8492411378300C1746E /* LaunchScreen.storyboard */; };
+		2AB3B85424115A8E00C1746E /* MonthlyExport.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 2AB3B85324115A8E00C1746E /* MonthlyExport.xlsx */; };
+		2AB3B85624115DBD00C1746E /* MimeTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB3B85524115DBD00C1746E /* MimeTypeManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AB3B83B2411378000C1746E /* DemoMailSMPTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoMailSMPTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB3B83E2411378000C1746E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AB3B8402411378100C1746E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2AB3B8422411378100C1746E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AB3B8452411378100C1746E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AB3B8472411378300C1746E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AB3B84A2411378300C1746E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AB3B84C2411378300C1746E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AB3B852241138BF00C1746E /* DemoMailSMPTP-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DemoMailSMPTP-Bridging-Header.h"; sourceTree = "<group>"; };
+		2AB3B85324115A8E00C1746E /* MonthlyExport.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonthlyExport.xlsx; sourceTree = "<group>"; };
+		2AB3B85524115DBD00C1746E /* MimeTypeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypeManager.swift; sourceTree = "<group>"; };
+		40862072D20B57B165D36E37 /* Pods_DemoMailSMPTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoMailSMPTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B941D2EE9FA309DC3AA38E63 /* Pods-DemoMailSMPTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoMailSMPTP.release.xcconfig"; path = "Target Support Files/Pods-DemoMailSMPTP/Pods-DemoMailSMPTP.release.xcconfig"; sourceTree = "<group>"; };
+		E7184A2E010BB241CEB22D7F /* Pods-DemoMailSMPTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoMailSMPTP.debug.xcconfig"; path = "Target Support Files/Pods-DemoMailSMPTP/Pods-DemoMailSMPTP.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AB3B8382411378000C1746E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145C49BB7CDF96EA2E6F5678 /* Pods_DemoMailSMPTP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AB3B8322411378000C1746E = {
+			isa = PBXGroup;
+			children = (
+				2AB3B83D2411378000C1746E /* DemoMailSMPTP */,
+				2AB3B83C2411378000C1746E /* Products */,
+				8BB4C36FA0BA9F7B08F30109 /* Pods */,
+				E7946B632F7E59DA318D745E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2AB3B83C2411378000C1746E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB3B83B2411378000C1746E /* DemoMailSMPTP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AB3B83D2411378000C1746E /* DemoMailSMPTP */ = {
+			isa = PBXGroup;
+			children = (
+				2AB3B852241138BF00C1746E /* DemoMailSMPTP-Bridging-Header.h */,
+				2AB3B83E2411378000C1746E /* AppDelegate.swift */,
+				2AB3B8402411378100C1746E /* SceneDelegate.swift */,
+				2AB3B85324115A8E00C1746E /* MonthlyExport.xlsx */,
+				2AB3B8422411378100C1746E /* ViewController.swift */,
+				2AB3B85524115DBD00C1746E /* MimeTypeManager.swift */,
+				2AB3B8442411378100C1746E /* Main.storyboard */,
+				2AB3B8472411378300C1746E /* Assets.xcassets */,
+				2AB3B8492411378300C1746E /* LaunchScreen.storyboard */,
+				2AB3B84C2411378300C1746E /* Info.plist */,
+			);
+			path = DemoMailSMPTP;
+			sourceTree = "<group>";
+		};
+		8BB4C36FA0BA9F7B08F30109 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7184A2E010BB241CEB22D7F /* Pods-DemoMailSMPTP.debug.xcconfig */,
+				B941D2EE9FA309DC3AA38E63 /* Pods-DemoMailSMPTP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7946B632F7E59DA318D745E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40862072D20B57B165D36E37 /* Pods_DemoMailSMPTP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AB3B83A2411378000C1746E /* DemoMailSMPTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB3B84F2411378300C1746E /* Build configuration list for PBXNativeTarget "DemoMailSMPTP" */;
+			buildPhases = (
+				F7C19C39BFFD3093565356EA /* [CP] Check Pods Manifest.lock */,
+				2AB3B8372411378000C1746E /* Sources */,
+				2AB3B8382411378000C1746E /* Frameworks */,
+				2AB3B8392411378000C1746E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoMailSMPTP;
+			productName = DemoMailSMPTP;
+			productReference = 2AB3B83B2411378000C1746E /* DemoMailSMPTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AB3B8332411378000C1746E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mehul Parmar";
+				TargetAttributes = {
+					2AB3B83A2411378000C1746E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2AB3B8362411378000C1746E /* Build configuration list for PBXProject "DemoMailSMPTP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AB3B8322411378000C1746E;
+			productRefGroup = 2AB3B83C2411378000C1746E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AB3B83A2411378000C1746E /* DemoMailSMPTP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AB3B8392411378000C1746E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB3B85424115A8E00C1746E /* MonthlyExport.xlsx in Resources */,
+				2AB3B84B2411378300C1746E /* LaunchScreen.storyboard in Resources */,
+				2AB3B8482411378300C1746E /* Assets.xcassets in Resources */,
+				2AB3B8462411378100C1746E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7C19C39BFFD3093565356EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoMailSMPTP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AB3B8372411378000C1746E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB3B8432411378100C1746E /* ViewController.swift in Sources */,
+				2AB3B85624115DBD00C1746E /* MimeTypeManager.swift in Sources */,
+				2AB3B83F2411378100C1746E /* AppDelegate.swift in Sources */,
+				2AB3B8412411378100C1746E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2AB3B8442411378100C1746E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AB3B8452411378100C1746E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AB3B8492411378300C1746E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AB3B84A2411378300C1746E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AB3B84D2411378300C1746E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AB3B84E2411378300C1746E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AB3B8502411378300C1746E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7184A2E010BB241CEB22D7F /* Pods-DemoMailSMPTP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLBUXALG5Y;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+				);
+				INFOPLIST_FILE = DemoMailSMPTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.invixium.ixmsalesapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoMailSMPTP/DemoMailSMPTP-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AB3B8512411378300C1746E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B941D2EE9FA309DC3AA38E63 /* Pods-DemoMailSMPTP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLBUXALG5Y;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+				);
+				INFOPLIST_FILE = DemoMailSMPTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.invixium.ixmsalesapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoMailSMPTP/DemoMailSMPTP-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AB3B8362411378000C1746E /* Build configuration list for PBXProject "DemoMailSMPTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB3B84D2411378300C1746E /* Debug */,
+				2AB3B84E2411378300C1746E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AB3B84F2411378300C1746E /* Build configuration list for PBXNativeTarget "DemoMailSMPTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB3B8502411378300C1746E /* Debug */,
+				2AB3B8512411378300C1746E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AB3B8332411378000C1746E /* Project object */;
+}
